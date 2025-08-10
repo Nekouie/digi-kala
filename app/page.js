@@ -1,103 +1,42 @@
-import Image from "next/image";
+import Ads from "./[header]/ads";
+import AdsBanner from "@/app/[ads_item]/adsBanner";
+import Header from "@/app/[header]/header";
+import Story from "@/app/[ads_item]/story";
+import OnlineChat from "@/app/[fixItem]/onlineChat";
+import SuperMarket from "@/app/[fixItem]/superMarket";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+const Home = () => {
+    return (
+        <>
+            <div className="fixed w-full top-0">
+                <Ads/>
+                <Header/>
+            </div>
+            <div className="mt-45">
+                <Story />
+                <AdsBanner/>
+                <OnlineChat/>
+                <SuperMarket/>
+            </div>
+            <div className="bg-gray-600">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, ducimus, est. Adipisci consequatur consequuntur distinctio ea esse fugit molestias necessitatibus nihil obcaecati reiciendis. Accusantium adipisci amet aperiam architecto asperiores assumenda, at aut blanditiis corporis cupiditate deleniti dolores ea eaque enim eos esse est eum inventore maxime minima minus natus nesciunt nihil perspiciatis quae quas qui rem rerum saepe sed sequi suscipit tempora tempore tenetur vel veniam vitae! Aperiam aut, consectetur culpa delectus eius eos eveniet impedit ipsam ipsum iste iusto, natus unde! A aliquam aliquid consectetur debitis deserunt ducimus eius error id impedit incidunt ipsam, ipsum labore, libero magni nostrum numquam obcaecati omnis possimus praesentium quaerat quasi ratione recusandae rem sed vel. Dolores eum incidunt ipsam pariatur velit. Eveniet fugiat magni modi porro? Accusamus alias blanditiis dolor dolorem eos esse et eveniet, illo incidunt iste laboriosam minima omnis placeat quasi recusandae, reiciendis similique. Blanditiis, consequatur delectus doloremque eos fugit incidunt ipsum iure libero natus possimus quaerat quos repellendus saepe sequi tempore totam ut? Adipisci aliquam amet cumque delectus deserunt dolore doloremque ducimus earum exercitationem fuga fugit harum labore, maxime modi odit officiis quae quaerat, quas quia ratione similique vero vitae voluptatum! Deserunt eaque harum, molestias mollitia recusandae voluptate? Maxime, quod!d</p>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+            </div>
+
+          </>
+    )
 }
+
+export default Home
