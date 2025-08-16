@@ -2,7 +2,7 @@ import { Vazirmatn , Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const vazirmatn = Vazirmatn({
-  subsets: ["persian"],
+  subsets: ["arabic"],
 });
 
 
