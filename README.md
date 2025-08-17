@@ -12,7 +12,6 @@ A modern e-commerce website inspired by [DigiKala](https://www.digikala.com/), b
 * ❤️ **Wishlist functionality**
 * 👤 **User authentication (login/signup)**
 * 🌙 **Dark/Light mode**
-* ⚡ **SEO-friendly** with Server-side Rendering (SSR)
 
 ---
 
@@ -20,9 +19,7 @@ A modern e-commerce website inspired by [DigiKala](https://www.digikala.com/), b
 
 * [Next.js](https://nextjs.org/) – React framework for SSR and SSG
 * [TailwindCSS](https://tailwindcss.com/) – Utility-first CSS framework
-* [TanStack Query (React Query)](https://tanstack.com/query) – Data fetching & caching
 * [Axios](https://axios-http.com/) – HTTP client
-* [NextAuth.js](https://next-auth.js.org/) – Authentication
 
 ---
 
@@ -34,8 +31,6 @@ A modern e-commerce website inspired by [DigiKala](https://www.digikala.com/), b
 ├── pages             # Next.js pages (each file = route)
 ├── public            # Static assets (images, icons, etc.)
 ├── styles            # Tailwind and global styles
-├── utils             # Helper functions & API logic
-├── lib               # Configs, adapters, and shared modules
 └── package.json      # Dependencies and scripts
 ```
 
@@ -66,21 +61,8 @@ Create a `.env.local` file in the project root:
 # App
 NEXT_PUBLIC_SITE_URL=http://localhost:3000
 
-# API
-API_BASE_URL=https://api.example.com
 
-# Auth (if using NextAuth)
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=replace_with_a_strong_secret
 ```
-
-### 4) Run the development server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
@@ -93,17 +75,12 @@ npm run start   # Run production build
 npm run lint    # Lint the project
 ```
 
----
-
-## 🖼 Preview
-
-*Add screenshots or GIFs of your project here*
 
 ---
 
 ## 🌐 Live Demo
 
-*Add your Vercel/Netlify deployment link here*
+*https://digi-kalafor-resome.vercel.app/*
 
 ---
 
@@ -115,20 +92,12 @@ npm run lint    # Lint the project
 * **Search**: debounced search with server-side or client-side filtering
 * **Theme**: dark/light with system preference fallback
 
----
-
-## 🪄 Coding Standards
-
-* Type-safe components (if using TypeScript)
-* Accessible UI (aria labels, keyboard navigation)
-* Reusable utility functions and hooks
-* SEO: meta tags, Open Graph, structured data where relevant
 
 ---
 
 ## 👨‍💻 Author
 
-**Hossein Nekoei** – [GitHub](https://github.com/username)
+**Hossein Nekouie** – [GitHub](https://github.com/nekouie)
 
 ---
 
