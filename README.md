@@ -53,16 +53,6 @@ npm install
 yarn install
 ```
 
-### 3) Configure environment variables
-
-Create a `.env.local` file in the project root:
-
-```env
-# App
-NEXT_PUBLIC_SITE_URL=http://localhost:3000
-
-
-```
 
 ---
 
