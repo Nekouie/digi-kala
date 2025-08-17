@@ -10,7 +10,7 @@ import SuperSuggest from "@/app/[seggestion]/superSuggest";
 const Home = () => {
     return (
         <>
-            <div className="fixed w-full top-0">
+            <div className="fixed w-full top-0 z-10">
                 <Ads/>
                 <Header/>
             </div>

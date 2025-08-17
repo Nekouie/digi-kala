@@ -10,7 +10,7 @@ import ChooseCity from "@/app/[header]/chooseCity";
 const Header = () => {
     return (
         <>
-            <Box className={"border-b-2 w-full text-nowrap border-gray-600/30 h-28 shadow-sm fixed" +
+            <Box className={"border-b-2 w-full text-nowrap border-gray-600/30  shadow-sm fixed" +
                 " bg-white"} >
                 <div className="w-full flex h-1/2 items-center justify-between mt-1">
                     <div className="w-10/12 h-full flex items-center justify-start mr-6">
@@ -21,7 +21,7 @@ const Header = () => {
                         <UserItems/>
                     </div>
                 </div>
-                <div className="w-full flex items-center justify-between">
+                <div className="w-full flex items-center justify-between mt-5">
                     <Categories/>
                     <ChooseCity/>
                 </div>

@@ -4,28 +4,72 @@ import ShoppingBasketOutlinedIcon from "@mui/icons-material/ShoppingBasketOutlin
 import SavingsIcon from "@mui/icons-material/Savings";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
+import Link from "next/link"
 
 const Categories = () => {
-    return(
+    return (
         <>
-            <div className="w-fit h-1/12 flex flex-row items-center mt-5 justify-start">
-                <div className="w-10/12  flex flex-row justify-start items-center mr-3">
-                    <MenuOutlinedIcon className="text-gray-900 scale-70 "/>
-                    <p className="text-gray-900 ml-4 text-[0.95rem] font-[450] ">دسته بندی کالا ها </p>
+            <div className="w-fit flex flex-row items-center mt-2 justify-start">
+                <div className="w-10/12  flex flex-row justify-start items-end">
+
+                    <div className="relative flex justify-center items-center px-2 py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-600 hover:after:w-full
+                    after:transition-all after:duration-200 not-hover:duration-1100">
+                        <MenuOutlinedIcon className="text-gray-900 scale-70 "/>
+                        <Link href={"/"} className="text-gray-900 text-[0.95rem] font-[450] ">دسته
+                            بندی کالا ها </Link>
+                    </div>
+
                     <span className="text-gray-200">|</span>
-                    <PercentOutlinedIcon className="text-gray-400 scale-60 " />
-                    <p className="text-gray-900 ml-4 text-[0.85rem] font-[300] ">شگفت انگیز ها </p>
-                    <ShoppingBasketOutlinedIcon className="text-gray-400 scale-60"/>
-                    <p className="text-gray-900 ml-4 text-[0.85rem] font-[300] ">سوپر مارکت </p>
-                    <SavingsIcon className="text-gray-400 scale-60"/>
-                    <p className="text-gray-900 ml-4 text-[0.85rem] font-[300] ">طلای دیجیتال </p>
-                    <WhatshotIcon className="text-gray-400 scale-60"/>
-                    <p className="text-gray-900 ml-4 text-[0.85rem] font-[300] ">پر فروش ترین ها </p>
-                    <PhoneIphoneIcon className="text-gray-400 scale-60"/>
-                    <p className="text-gray-900 text-[0.85rem] font-[300] ">خرید کالای کار کرده</p>
-                    <span className="text-gray-200 mx-3">|</span>
-                    <p className="text-gray-900 ml-4 text-[0.85rem] font-[300] lg:block hidden ">سوالی دارید ؟</p>
-                    <p className="text-gray-900 ml-4 text-[0.85rem] font-[300] lg:block sm:hidden" >در دیجیکالا بفروشید!</p>
+
+                    <div className="relative flex justify-center items-center px-2 py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-600 hover:after:w-full
+                    after:transition-all after:duration-200 not-hover:duration-1100">
+                        <PercentOutlinedIcon className="text-gray-400 scale-60 "/>
+                        <Link href={"/"} className="text-gray-900 text-[0.85rem] font-[300] ">شگفت
+                            انگیز ها </Link>
+                    </div>
+                    <div className="relative flex justify-center items-center px-2 py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-600 hover:after:w-full
+                    after:transition-all after:duration-200 not-hover:duration-1100">
+                        <ShoppingBasketOutlinedIcon className="text-gray-400 scale-60"/>
+                        <Link href={"/"} className="text-gray-900  text-[0.85rem] font-[300] ">سوپر
+                            مارکت </Link>
+                    </div>
+                    <div className="relative flex justify-center items-center px-2 py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-600 hover:after:w-full
+                    after:transition-all after:duration-200 not-hover:duration-1100">
+                        <SavingsIcon className="text-gray-400 scale-60"/>
+                        <Link href={"/"} className="text-gray-900  text-[0.85rem] font-[300] ">طلای
+                            دیجیتال </Link>
+                    </div>
+                    <div className="relative flex justify-center items-center px-2 py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-600 hover:after:w-full
+                    after:transition-all after:duration-200 not-hover:duration-1100">
+                        <WhatshotIcon className="text-gray-400 scale-60"/>
+                        <Link href={"/"} className="text-gray-900  text-[0.85rem] font-[300] ">پر
+                            فروش ترین ها </Link>
+                    </div>
+                    <div className="relative flex justify-center items-center px-2 py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-600 hover:after:w-full
+                    after:transition-all after:duration-200 not-hover:duration-1100">
+                        <PhoneIphoneIcon className="text-gray-400 scale-60"/>
+                        <Link href={"/"} className="text-gray-900 text-[0.85rem] font-[300] ">خرید کالای
+                            کار کرده</Link>
+                    </div>
+                    <span className="text-gray-200">|</span>
+                    <div className="relative flex justify-center items-center px-2 py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-600 hover:after:w-full
+                    after:transition-all after:duration-200 not-hover:duration-1100">
+                        <Link href={"/"}
+                              className="text-gray-900  text-[0.85rem] font-[300] lg:block hidden ">سوالی
+                            دارید ؟</Link>
+                    </div>
+                    <div className="relative flex justify-center items-center px-2 py-2 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-red-600 hover:after:w-full
+                    after:transition-all after:duration-200 not-hover:duration-1100">
+                        <Link href={"/"}
+                              className="text-gray-900  text-[0.85rem] font-[300] lg:block sm:hidden">در
+                            دیجیکالا بفروشید!</Link>
+                    </div>
+
+
+
+
+
+
                 </div>
 
             </div>
