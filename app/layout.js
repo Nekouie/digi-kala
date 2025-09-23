@@ -14,10 +14,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html dir="rtl">
+    <html dir="rtl" lang="fa">
       <body className={vazirmatn.className}
       >
-      <div className="container">
+      <div className="flex flex-col justify-center items-center" >
           {children}
       </div>
 

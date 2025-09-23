@@ -4,8 +4,8 @@ import Image from "next/image"
 const AdsBanner = () => {
     return (
         <>
-            <div className="w-full ">
-                <Image className="h-100 object-cover" src={banner} alt=""/>
+            <div className="flex flex-col items-center w-full">
+                <Image className="object-cover h-100" src={banner} alt=""/>
             </div>
         </>
     )
