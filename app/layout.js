@@ -1,10 +1,9 @@
-import { Vazirmatn , Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const vazirmatn = Vazirmatn({
-    subsets: ["arabic"],
-});
-
+const vazirLocal = localFont({
+    src: "./[seggestion]/assets/Vazirmatn-VariableFont_wght.ttf",
+})
 
 
 export const metadata = {
@@ -14,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html dir="rtl" lang="fa" className={vazirmatn.className}>
+        <html dir="rtl" lang="fa" className={vazirLocal.className}>
         <body
         >
             {children}
