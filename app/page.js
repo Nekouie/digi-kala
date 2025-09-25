@@ -11,24 +11,21 @@ import PicSuggest from "@/app/[seggestion]/picSuggest";
 const Home = () => {
     return (
         <>
-            <div className="w-full fixed top-0 z-10 flex flex-col">
+            <div className="w-full h-full flex flex-col justify-center items-center relative">
                 <Ads/>
-            </div>
-            <div className="w-full fixed top-15 z-10">
                 <Header/>
-            </div>
+                <div className="xl:max-w-400 xl:px-26 sm:px-6 sm:w-full  flex flex-col justify-center items-center relative">
+                    <Story/>
+                    <div className="w-500">
+                        <AdsBanner/>
+                    </div>
+                    <OnlineChat/>
+                    <SuperMarket/>
 
-            <div
-                className="flex flex-col justify-center items-center mt-45 w-full max-w-[1800px] relative">
-                <Story/>
-                <AdsBanner/>
-                <OnlineChat/>
-                <SuperMarket/>
-            </div>
-            <div className="">
-                <ServiceCategories/>
-                <SuperSuggest/>
-                <PicSuggest/>
+                    <ServiceCategories/>
+                    <SuperSuggest/>
+                    <PicSuggest/>
+                </div>
             </div>
         </>
     )

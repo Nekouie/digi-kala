@@ -1,8 +1,8 @@
 const ServiceCategories = () => {
     return (
         <>
-            <div className="w-full h-[10rem] flex items-center justify-center text-center flex-nowrap">
-                <div className="w-10/12 h-9/12 flex row-auto items-baseline justify-center ">
+            <div className="w-full h-[10rem] flex flex-row items-center justify-around text-center flex-nowrap">
+                <div className="w-full h-9/12 flex row-auto items-baseline justify-center ">
                     <div className="w-1/14 flex ml-12 flex-col items-center-safe justify-center">
                         <div
                             className="bg-teal-900 rounded-full h-13 w-13 mb-2 text-white flex justify-center items-center">p

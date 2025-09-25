@@ -3,7 +3,7 @@ const SuperSuggest = () => {
         <>
             <div className="w-full h-[20rem] flex items-center justify-center mt-3">
                 <div
-                    className="w-10/12 h-full relative bg-red-600 rounded-2xl py-5 flex justify-center items-center">
+                    className="w-full h-full relative bg-red-600 rounded-2xl py-5 flex justify-center items-center">
 
                     <div className={"relative flex flex-row items-center justify-start snap-x" +
                         " scroll-smooth" +
