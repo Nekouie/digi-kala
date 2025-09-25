@@ -12,7 +12,7 @@ const UserItems = () => {
                 </Link>
                 <Link href="/" className="border border-gray-300 rounded-lg px-4 py-1 flex items-center justify-center">
                     <LoginIcon className="text-gray-800  scale-100 ml-2" />
-                    <p className="text-black text-xs font-[600]">ورود | ثبت نام</p>
+                    <p className="text-black text-xs font-[400]">ورود | ثبت نام</p>
                 </Link>
                 <div className="mr-2">
                     <span className="text-xl text-gray-300 mr-1">|</span>
