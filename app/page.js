@@ -16,7 +16,7 @@ const Home = () => {
                 <Header/>
                 <div className="xl:max-w-400 xl:px-26 sm:px-6 sm:w-full  flex flex-col justify-center items-center relative">
                     <Story/>
-                    <div className="w-500">
+                    <div className="w-400">
                         <AdsBanner/>
                     </div>
                     <OnlineChat/>
