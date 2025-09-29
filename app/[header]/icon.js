@@ -1,4 +1,3 @@
-import MoodRoundedIcon from "@mui/icons-material/MoodRounded";
 import {Typography} from "@mui/material";
 import Link from "next/link"
 const Icon = () => {

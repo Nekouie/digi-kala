@@ -7,6 +7,11 @@ import SuperMarket from "@/app/[fixItem]/superMarket";
 import ServiceCategories from "@/app/[digiService]/serviceCategories";
 import SuperSuggest from "@/app/[seggestion]/superSuggest";
 import PicSuggest from "@/app/[seggestion]/picSuggest";
+import CompanyInf from "@/app/[footer]/companyIn-inf";
+import Download from "./[footer]/download"
+import Links from "@/app/[footer]/links";
+import DigiBio from "@/app/[footer]/digi-bio";
+import Copyright from "./[footer]/copyright"
 
 const Home = () => {
     return (
@@ -14,9 +19,9 @@ const Home = () => {
             <div className="w-full h-full flex flex-col justify-center items-center relative">
                 <Ads/>
                 <Header/>
-                <div className="xl:max-w-400 xl:px-26 sm:px-6 sm:w-full  flex flex-col justify-center items-center relative">
+                <div className="xl:max-w-380 w-full">
                     <Story/>
-                    <div className="w-400">
+                    <div className="xl:max-w-380">
                         <AdsBanner/>
                     </div>
                     <OnlineChat/>
@@ -25,6 +30,14 @@ const Home = () => {
                     <ServiceCategories/>
                     <SuperSuggest/>
                     <PicSuggest/>
+                </div>
+                {/*footer*/}
+                <div className="xl:max-w-380">
+                    <CompanyInf/>
+                    <Links/>
+                    <Download/>
+                    <DigiBio/>
+                    <Copyright/>
                 </div>
             </div>
         </>
