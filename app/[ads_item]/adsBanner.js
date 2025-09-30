@@ -5,7 +5,7 @@ const AdsBanner = () => {
     return (
         <>
             <div className="flex flex-col items-center">
-                <Image className="object-cover   h-100" src={banner} alt=""/>
+                <Image className="lg:object-cover object-center h-50 lg:h-100" src={banner} alt=""/>
             </div>
         </>
     )

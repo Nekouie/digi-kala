@@ -27,15 +27,15 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 const PicSuggest = () => {
     return (
         <>
-            <div className="w-full flex h-[50rem] flex-col justify-start items-center mt-5">
+            <div className="w-full flex h-fit flex-col justify-start items-center mt-5">
                 <div className="w-full h-fit flex flex-row justify-around flex-wrap">
-                    <Image className="rounded-3xl  lg:w-1/4 lg:h-65 xs:w-1/2 h-25 object-cover " src={shemsh} alt="pic_1"/>
-                    <Image className="rounded-3xl  lg:w-1/4 lg:h-65 xs:w-1/2 h-25 object-cover" src={abzar} alt="pic_2"/>
+                    <Image className="rounded-3xl  lg:w-1/4 lg:h-65 xs:w-1/2 h-25 object-cover p-2" src={shemsh} alt="pic_1"/>
+                    <Image className="rounded-3xl  lg:w-1/4 lg:h-65 xs:w-1/2 h-25 object-cover p-2" src={abzar} alt="pic_2"/>
                     <Image className="rounded-3xl  lg:w-1/4 lg:h-65 xs:w-1/2 h-25 object-cover p-2" src={zibaei} alt="pic_3"/>
-                    <Image className="rounded-3xl lg:w-1/4 lg:h-65 xs:w-1/2 h-25 object-cover p-2" src={lux} alt="pic_4"/>
+                    <Image className="rounded-3xl  lg:w-1/4 lg:h-65 xs:w-1/2 h-25 object-cover p-2" src={lux} alt="pic_4"/>
                 </div>
                 <div
-                    className="bg-red lg:block hidden w-full h-1/5 flex flex-row bg-gray-200 rounded-2xl mt-5  justify-around items-center">
+                    className="bg-red hidden w-full h-1/5 lg:flex flex-row bg-gray-200 rounded-2xl mt-5  justify-around items-center">
                     <div className="flex w-full h-full flex-row items-center">
                         <div className="flex items-center justify-start w-1/2">
                             <p className="font-bold text-green-700 text-[1.7rem] ms-20">شگفت انگیز سوپر
@@ -69,10 +69,10 @@ const PicSuggest = () => {
 
                 </div>
                 <div className="w-full flex flex-row justify-around flex-wrap mt-3">
-                    <Image className="rounded-3xl lg:w-75 lg:h-65 xs:w-1/2 h-35 object-cover py-2" src={kasra} alt="pic_4"/>
-                    <Image className="rounded-3xl lg:w-75 lg:h-65 xs:w-1/2 h-35 object-cover py-2" src={nescafe} alt="pic_4"/>
-                    <Image className="rounded-3xl lg:w-75 lg:h-65 xs:w-1/2 h-35 object-cover py-2" src={abzarKhodoro} alt="pic_4"/>
-                    <Image className="rounded-3xl lg:w-75 lg:h-65 xs:w-1/2 h-35 object-cover py-2" src={lafarrerr} alt="pic_4"/>
+                    <Image className="rounded-3xl lg:w-1/4 lg:h-65 xs:w-1/2 h-35 object-cover p-2" src={kasra} alt="pic_4"/>
+                    <Image className="rounded-3xl lg:w-1/4 lg:h-65 xs:w-1/2 h-35 object-cover p-2" src={nescafe} alt="pic_4"/>
+                    <Image className="rounded-3xl lg:w-1/4 lg:h-65 xs:w-1/2 h-35 object-cover p-2" src={abzarKhodoro} alt="pic_4"/>
+                    <Image className="rounded-3xl lg:w-1/4 lg:h-65 xs:w-1/2 h-35 object-cover p-2" src={lafarrerr} alt="pic_4"/>
                 </div>
             </div>
         </>

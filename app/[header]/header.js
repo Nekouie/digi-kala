@@ -10,7 +10,9 @@ import ChooseCity from "@/app/[header]/chooseCity";
 const Header = () => {
     return (
         <>
-            <Box className={"min-w-full sticky top-16 z-999 flex flex-col justify-start" +
+            <Box className={"min-w-full min-h-16 lg:fixed sticky lg:top-16 top-0  z-999 flex" +
+                " flex-col" +
+                " justify-start" +
                 " items-center" +
                 " border-b-2 w-full text-nowrap border-gray-600/30  shadow-sm" +
                 " fixed flex flex-col justify-between  items-center " +
@@ -20,15 +22,15 @@ const Header = () => {
                     " justify-center" +
                     " items-center"}>
                     <div className="w-full flex h-10 items-center justify-between mt-1">
-                        <div className="w-fit max-w-3/4 h-full flex items-center justify-start mr-3 relative">
+                        <div className="w-fit max-w-3/4 h-full lg:flex hidden    items-center justify-start mr-3 relative">
                             <Icon/>
                             <Search />
                         </div>
-                        <div className="w-1/2 flex items-center justify-end ml-1">
+                        <div className="w-1/2 lg:flex hidden items-center justify-end ml-1">
                             <UserItems/>
                         </div>
                     </div>
-                    <div className="w-full flex items-center justify-between mt-3">
+                    <div className="w-full hidden lg:flex items-center justify-between mt-3">
                         <Categories/>
                         <ChooseCity/>
                     </div>

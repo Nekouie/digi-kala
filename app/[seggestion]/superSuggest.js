@@ -71,19 +71,19 @@ const SuperSuggest = () => {
                              className="bg-white border sticky right-40 select-none border-gray-300 rounded-full z-40 text-gray-500 text-[1.5rem] px-3 hover:cursor-pointer hover:text-gray-800">{"<"}</div>
 
                         <div className="w-full h-full flex flex-row items-center justify-start   relative">
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-1/8 me-2"></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
+                            <div className="bg-white rounded-sm h-full min-w-45 me-2"></div>
                         </div>
                     </div>
 

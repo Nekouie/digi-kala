@@ -12,14 +12,17 @@ import Download from "./[footer]/download"
 import Links from "@/app/[footer]/links";
 import DigiBio from "@/app/[footer]/digi-bio";
 import Copyright from "./[footer]/copyright"
+import DigiContact from "@/app/[footer]/underLg/digi-contact";
+import ListLink from "@/app/[footer]/underLg/list-link";
+import BioSm from "@/app/[footer]/underLg/bio-sm";
 
 const Home = () => {
     return (
         <>
-            <div className="w-full h-full flex flex-col justify-center items-center relative">
+            <div className="w-full h-full flex flex-col justify-center items-center">
                 <Ads/>
                 <Header/>
-                <div className="xl:max-w-380 w-full">
+                <div className="xl:max-w-380 w-full flex flex-col justify-center items-center relative">
                     <Story/>
                     <div className="xl:max-w-380">
                         <AdsBanner/>
@@ -31,13 +34,18 @@ const Home = () => {
                     <SuperSuggest/>
                     <PicSuggest/>
                 </div>
-                {/*footer*/}
-                <div className="xl:max-w-380">
+                {/*footer_lg*/}
+                <div className="xl:max-w-380 hidden lg:block">
                     <CompanyInf/>
                     <Links/>
                     <Download/>
                     <DigiBio/>
                     <Copyright/>
+                </div>
+                <div className="lg:hidden w-23/24 flex flex-col justify-center items-center relative">
+                    <DigiContact/>
+                    <ListLink/>
+                    <BioSm/>
                 </div>
             </div>
         </>
