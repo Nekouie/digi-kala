@@ -19,19 +19,17 @@ import BioSm from "@/app/[footer]/underLg/bio-sm";
 const Home = () => {
     return (
         <>
-            <div className="w-full h-full flex flex-col justify-center items-center">
-                <Ads/>
-                <Header/>
-                <div className="xl:max-w-380 w-full flex flex-col justify-center items-center relative">
+            <div className="w-full h-full flex flex-col justify-center items-center overflow-x-hidden">
+                    <Ads/>
+                    <Header/>
+                <div
+                    className="lg:max-w-430 lg:px-20 lg:mt-40  h-fit w-full flex flex-col justify-center items-center">
                     <Story/>
-                    <div className="xl:max-w-380">
-                        <AdsBanner/>
-                    </div>
+                    <AdsBanner/>
                     <OnlineChat/>
                     <SuperMarket/>
-
                     <ServiceCategories/>
-                    <SuperSuggest/>
+                    <SuperSuggest />
                     <PicSuggest/>
                 </div>
                 {/*footer_lg*/}
@@ -42,7 +40,8 @@ const Home = () => {
                     <DigiBio/>
                     <Copyright/>
                 </div>
-                <div className="lg:hidden w-23/24 flex flex-col justify-center items-center relative">
+                <div
+                    className="lg:hidden w-23/24 flex flex-col justify-center items-center relative">
                     <DigiContact/>
                     <ListLink/>
                     <BioSm/>

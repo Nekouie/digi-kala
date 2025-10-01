@@ -7,10 +7,10 @@ import logo from "./assets/logo.png"
 import kasbokar from "./assets/kasbokar.webp"
 
 import {useRef , useState} from "react";
+import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 
 const DigiBio = () => {
 
-    const ref = useRef(null);
     const [seeMore, setSeeMore] = useState(true);
 
 
@@ -19,8 +19,8 @@ const DigiBio = () => {
             <div className="px-5 w-full flex flex-row justify-center border-y border-gray-200 my-5 py-10">
                 <div className="w-4/6">
                     <div className={`"w-full flex justify-start flex-col items-start ${seeMore? "mask-b-to-95%": ""} "`}>
-                        <p className="text-2xl mb-5">دیجی کالا؛ بزرگترین فروشگاه اینترنتی ایران</p>
-                        <p className={`text-sm/8 text-gray-500 ${seeMore ? "line-clamp-4" : ""}`}>
+                        <p className="text-xl mb-1   text-gray-600">دیجی کالا؛ بزرگترین فروشگاه اینترنتی ایران</p>
+                        <p className={`text-xs/8 text-gray-500 ${seeMore ? "line-clamp-4" : ""}`}>
                             دیجی کالا سال‌ها است که به انتخاب اول بسیاری از خریداران اینترنتی تبدیل شده
                             است. دیجی کالا به عنوان بزرگ‌ترین و معتبرترین فروشگاه آنلاین ایران،
                             شناخته‌شده‌ترین فروشگاه نیز محسوب می‌شود. این فروشگاه آنلاین نه‌تنها
@@ -233,7 +233,7 @@ const DigiBio = () => {
                             خدمات دیجی کالا، خریدی مطمئن، سریع و راحت را تجربه خواهید کرد.</p>
 
                     </div>
-                    <button onClick={() => setSeeMore(!seeMore)} className="text-sky-500 text-sm" >{seeMore? "مشاهده بیشتر >  " : "بستن >" }</button>
+                    <button onClick={() => setSeeMore(!seeMore)} className="text-sky-500 text-xs" >{seeMore? "مشاهده بیشتر" : "بستن" }<NavigateBeforeIcon className="scale-65" /> </button>
                 </div>
                 <div className="w-2/6 flex flex-row justify-between items-start">
                     <div

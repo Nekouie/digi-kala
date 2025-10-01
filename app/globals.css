@@ -22,6 +22,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "vazir" ,"Vazir" ,"B Koodak", "B Nazanin", sans-serif;
+
 }
 
 input::placeholder{
@@ -31,6 +32,17 @@ input::placeholder{
 
 .place_custom::placeholder {
   font-weight: 400;
+}
+.list-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.list-container::-webkit-scrollbar {
+  display: none;
 }
 
 

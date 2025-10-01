@@ -1,11 +1,11 @@
-import banner from "./assets/3.webp"
+import banner from "./assets/adsBaner.webp"
 import Image from "next/image"
 
 const AdsBanner = () => {
     return (
         <>
-            <div className="flex flex-col items-center">
-                <Image className="lg:object-cover object-center h-50 lg:h-100" src={banner} alt=""/>
+            <div className="lg:w-15/12 w-full flex justify-center items-center">
+                <Image className="lg:h-100 w-10/3 object-cover" src={banner} alt=""/>
             </div>
         </>
     )

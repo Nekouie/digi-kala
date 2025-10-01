@@ -1,15 +1,11 @@
 "use client"
 
-import {useRef, useState} from "react";
-import Image from "next/image";
-import sapra from "@/app/[footer]/assets/sapra.webp";
-import rezi from "@/app/[footer]/assets/rezi.webp";
-import kasbokar from "@/app/[footer]/assets/kasbokar.webp";
-import logo from "@/app/[footer]/assets/logo.png";
+import { useState} from "react";
+
 
 const BioSm = () => {
 
-    const ref2 = useRef(null);
+
     const [seeMore, setSeeMore] = useState(true);
 
     return (

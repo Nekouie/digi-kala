@@ -1,5 +1,6 @@
 "use client"
-
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import {useRef, useState} from "react";
 
 const SuperSuggest = () => {
@@ -34,9 +35,9 @@ const SuperSuggest = () => {
 
     return (
         <>
-            <div className="w-full h-[20rem] flex items-center justify-center mt-3">
+            <div className="w-full h-[20rem] hidden lg:flex items-center justify-start mt-3 ">
                 <div
-                    className="w-full h-full relative bg-red-600 rounded-2xl py-5 flex justify-center items-center">
+                    className="w-full h-full relative bg-red-600 rounded-2xl py-5 flex justify-start items-center">
 
                     <div
                         ref={scrollRef2}
@@ -44,13 +45,17 @@ const SuperSuggest = () => {
                         onMouseMove={handleMouseMove}
                         onMouseUp={handleMouseUp}
                         style={{cursor:(isDragging ?"grabbing":"grab")}}
-                         className={" flex flex-row items-center justify-start" +
+                         className={" flex lg:flex-row flex-col items-center justify-start" +
                         " snap-x" +
                         " h-full w-full" +
-                        " mr-8" +
-                        " overflow-x-hidden overflow-y-hidden"}>
+                        " overflow-x-auto overflow-y-hidden list-container"}>
+                        <div onClick={scrollRight}
+                             className="bg-white border lg:sticky right-5 select-none border-gray-300 rounded-full text-gray-500 p-2 hover:cursor-pointer hover:text-gray-800">
+                            <NavigateNextIcon/>
+                        </div>
+
                         <div
-                            className="h-full w-1/11 flex flex-col items-center justify-between me-2 ms-2 ">
+                            className="h-full px-6 lg:flex flex-col items-center justify-between me-2 ms-2 ">
                             <p className="text-white w-full text-center text-3xl/7">پیشنهاد شگفت
                                 انگیز</p>
                             <p className="text-white w-11/12 text-center text-2xl flex justify-between items-center">
@@ -67,28 +72,28 @@ const SuperSuggest = () => {
                             <p className="text-white w-full text-center text-nowrap"> مشاهده
                                 همه {" >"} </p>
                         </div>
-                        <div onClick={scrollRight}
-                             className="bg-white border sticky right-40 select-none border-gray-300 rounded-full z-40 text-gray-500 text-[1.5rem] px-3 hover:cursor-pointer hover:text-gray-800">{"<"}</div>
 
-                        <div className="w-full h-full flex flex-row items-center justify-start   relative">
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-1 "></div>
-                            <div className="bg-white rounded-sm h-full min-w-45 me-2"></div>
+                        <div className="w-full h-full flex flex-row items-start justify-start">
+                            <div className="bg-white rounded-xs h-full min-w-40  sm:-ms-6 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
+                            <div className="bg-white rounded-xs h-full min-w-40 me-2"></div>
                         </div>
                     </div>
 
                     <div onClick={scrollLeft}
-                        className="bg-white border absolute left-2 select-none border-gray-300 rounded-full text-gray-500 text-[1.5rem] px-3 hover:cursor-pointer hover:text-gray-800">{">"}</div>
+                        className="bg-white border absolute left-2 select-none border-gray-300 rounded-full text-gray-500 p-2 hover:cursor-pointer hover:text-gray-800">
+                        <NavigateBeforeIcon/>
+                    </div>
 
                 </div>
             </div>

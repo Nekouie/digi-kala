@@ -5,16 +5,16 @@ import Image from 'next/image';
 const DigiContact = () => {
     return (
         <>
-            <div className="w-full flex flex-col justify-center items-center mt-10">
-                <div className="bg-gray-200 text-sm p-2 rounded-2xl flex items-center justify-center">
+            <div className="w-full flex flex-col justify-center items-center mt-10 wrap-normal">
+                <div className="bg-gray-200 text-sm p-2 rounded-2xl flex-wrap flex items-center justify-center">
                     <p>رفتن به بالا</p>
                     <span className="-rotate-90 ms-4">{"<"}</span>
                 </div>
                 <div className="w-full flex items-center justify-between flex-row border-b p-4 border-b-gray-200">
-                    <div className="flex items-center justify-center bg-gray-300 rounded-full p-2">
+                    <div className="w-12 flex items-center justify-center bg-gray-300 rounded-full p-2">
                         <HeadsetMicIcon/>
                     </div>
-                    <div className="w-full ms-4">
+                    <div className="w-full ms-4 flex-wrap">
                         <p>تماس با پشتیبانی</p>
                         <p className="text-gray-500">7 روز هفنه، 24 ساعت</p>
                     </div>
