@@ -18,7 +18,9 @@ export default function RootLayout({ children }) {
         <html dir="rtl" lang="fa" >
         <body className={vazirmatn.className}
         >
-            {children}
+            <div className="flex flex-col justify-center items-center overflow-x-hidden">
+                {children}
+            </div>
         </body>
         </html>
     );
