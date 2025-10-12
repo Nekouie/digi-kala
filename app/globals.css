@@ -39,10 +39,13 @@ input::placeholder{
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  scroll-snap-type: x mandatory;
 }
 
 .list-container::-webkit-scrollbar {
   display: none;
 }
 
-
+.no-snap {
+  scroll-snap-type: none !important;
+}

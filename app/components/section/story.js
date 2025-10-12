@@ -23,6 +23,9 @@ const Story = () => {
         setIsDragging(true);
         setStartX(e.pageX);
         setScrollX(scrollRef.current.scrollLeft);
+        scrollRef.current.classList.add('no-snap');
+        scrollRef.current.style.scrollBehavior = "auto";
+
     }
     const handleMouseMove = (e) => {
         if (!isDragging) return;
@@ -33,14 +36,15 @@ const Story = () => {
 
     const handleMouseUp = () => {
         setIsDragging(false);
+        scrollRef.current.classList.remove('no-snap');
+        scrollRef.current.style.scrollBehavior = "smooth";
     }
 
 
     return (
         <>
-            <div className="w-full h-fit  lg:px-3 ">
                 <div
-                    className="bg-white  w-full h-[10rem] flex items-center justify-center relative">
+                    className="bg-white  lg:px-3   w-full h-[10rem] flex items-center justify-center relative">
                     <div onClick={scrollRight}
                          className="lg:flex hidden hover:text-gray-800 text-gray-500 cursor-pointer absolute right-5 z-1 bg-white p-2 rounded-full border border-gray-300 ">
                         <NavigateNextIcon/>
@@ -50,7 +54,7 @@ const Story = () => {
                          onMouseMove={handleMouseMove}
                          onMouseUp={handleMouseUp}
                          style={{cursor: (isDragging ? "grabbing" : "grab")}}
-                         className="w-full flex mx-5 list-container  overflow-y-hidden   overflow-x-auto items-center justify-start relative -z-0 ">
+                         className="w-full flex mx-5 list-container  overflow-y-hidden overflow-x-auto items-center justify-start relative -z-0 ">
                         <Stories/>
                     </div>
                     <div onClick={scrollLeft}
@@ -58,7 +62,6 @@ const Story = () => {
                         <NavigateBeforeIcon/>
                     </div>
                 </div>
-            </div>
         </>
     )
 }
