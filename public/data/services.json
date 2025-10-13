@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "سوپر مارکت",
+    "image": "/images/serviceImages/supermarket.png",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 2,
+    "title": "آیفون 17 ببر",
+    "image": "/images/serviceImages/iphone.png",
+    "description": "اپ ساده برای مدیریت کارهای روزانه با قابلیت افزودن و حذف تسک‌ها."
+  },
+  {
+    "id": 3,
+    "title": "طلای دیجیتال بدون کارمزد",
+    "image": "/images/serviceImages/tala.png",
+    "description": "یک پروژه تمرینی با React و Context API برای مدیریت سبد خرید."
+  },
+  {
+    "id": 4,
+    "title": "دریافت اعتبار",
+    "image": "/images/serviceImages/etebar.png",
+    "description": "یک پروژه تمرینی با React و Context API برای مدیریت سبد خرید."
+  },
+  {
+    "id": 5,
+    "title": "خرید FC26",
+    "image": "/images/serviceImages/fc26.png",
+    "description": "یک پروژه تمرینی با React و Context API برای مدیریت سبد خرید."
+  },
+  {
+    "id": 6,
+    "title": "بازگشت به مدرسه",
+    "image": "/images/serviceImages/school.png",
+    "description": "یک پروژه تمرینی با React و Context API برای مدیریت سبد خرید."
+  },
+  {
+    "id": 7,
+    "title": "اشتراک پلاس",
+    "image": "/images/serviceImages/plus.png",
+    "description": "یک پروژه تمرینی با React و Context API برای مدیریت سبد خرید."
+  },
+  {
+    "id": 8,
+    "title": "سکه طلاتو بفروش",
+    "image": "/images/serviceImages/sekke.png",
+    "description": "یک پروژه تمرینی با React و Context API برای مدیریت سبد خرید."
+  },
+  {
+    "id": 9,
+    "title": "تخفیف بومی محلی",
+    "image": "/images/serviceImages/takhfif.png",
+    "description": "یک پروژه تمرینی با React و Context API برای مدیریت سبد خرید."
+  }
+]

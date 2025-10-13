@@ -6,6 +6,7 @@ import PicSuggest from "@/app/components/section/picSuggest";
 import OnlineChat from "@/app/components/fixed/onlineChat/onlineChat";
 import SuperMarket from "@/app/components/fixed/superMarket/superMarket";
 
+
 const MainPage = () => {
     return (
         <>
