@@ -1,98 +1,44 @@
 import Image from 'next/image'
-import picture from '@/app/components/section/story/assets/1.jpg'
+import {useDispatch, useSelector} from "react-redux";
+import {fetchStory} from "@/app/redux/features/stories/storiesSlice"
+import {useEffect} from "react";
+import {Skeleton} from "@mui/material";
 
 const Stories = () => {
+
+    const dispatch = useDispatch();
+    const {stories, loading, error} = useSelector((state) => state.stories);
+
+    useEffect(() => {
+        dispatch(fetchStory());
+    }, [dispatch])
     return (
         <>
-        <div className="w-full h-full flex justify-start mt-4 scroll-smooth">
-                <div className="min-w-20 w-20 ml-5 snap-start snap-always  flex flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 1</p>
-                </div>
-                <div className="w-30 min-w-20 snap-start  flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 2</p>
-                </div>
-                <div className="w-30 min-w-20  snap-start flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 3</p>
-                </div>
-                <div className="w-30 min-w-20   snap-start flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 4</p>
-                </div>
-                <div className="w-30 min-w-20  snap-start flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 5</p>
-                </div>
-                <div className="w-30 min-w-20  snap-start flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 6</p>
-                </div>
-                <div className="w-30 min-w-20  snap-start flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 7</p>
-                </div>
-                <div className="w-30 min-w-20  snap-start flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 8</p>
-                </div>
-                <div className="w-30 min-w-20  snap-start flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 9</p>
-                </div>
-                <div className="w-30 min-w-20  snap-end flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 10</p>
-                </div>
-                <div className="w-30 min-w-20   flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 11</p>
-                </div>
-                <div className="w-30 min-w-20   flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 12</p>
-                </div>
-                <div className="w-30 min-w-20   flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 13</p>
-                </div>
-                <div className="w-30 min-w-20 snap-end  flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 14</p>
-                </div>
-                <div className="w-30 min-w-20 snap-end  flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 14</p>
-                </div>
-                <div className="w-30 min-w-20 snap-end  flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 14</p>
-                </div>
-                <div className="w-30 min-w-20 snap-end  flex ml-5 flex-col items-center justify-start">
-                    <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
-                           src={picture} alt=""/>
-                    <p className='text-[0.8rem] mt-2 font-light'>استوری 14</p>
-                </div>
+            {error ? (<p className="mx-auto">خطا : {error}</p>) : null}
+            {loading ? (<div
+                className="w-full  h-60 flex overflow-y-hidden overflow-x-auto list-container relative flex-row items-start lg:justify-between justify-start pt-20 xl:px-20 px-6     text-center">
+                {Array.from({length: 10}).map((_, index) => (
+                    <Skeleton
+                        key={index}
+                        variant='circular'
+                        width={70}
+                        height={70}
+                        style={{margin: '10px 0'}}
+                        animation='wave'
+                    />
+                ))}
+            </div>) : (<div
+                className="w-full h-full flex justify-start mt-4 scroll-smooth">
+                {stories.map((story) => (
 
+                    <div key={story.id}
+                         className="min-w-20 cursor-pointer w-20 ml-5 snap-start snap-always scroll-smooth flex flex-col items-center justify-start">
+                        <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
+                               src={story.image} alt={story.title} width={50} height={50}/>
+                        <p className='text-[0.8rem] mt-2 font-light'>{story.title}</p>
+                    </div>
+                ))}</div>)}
 
-            </div>
         </>
     )
 }

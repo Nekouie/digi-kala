@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "استوری 1",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 2,
+    "title": "استوری 2",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 3,
+    "title": "استوری 3",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 4,
+    "title": "استوری 4",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 5,
+    "title": "استوری 5",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 6,
+    "title": "استوری 6",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 7,
+    "title": "استوری 7",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 8,
+    "title": "استوری 8",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 9,
+    "title": "استوری 9",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 10,
+    "title": "استوری 10",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 11,
+    "title": "استوری 11",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 12,
+    "title": "استوری 12",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 13,
+    "title": "استوری 13",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 14,
+    "title": "استوری 14",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  },
+  {
+    "id": 15,
+    "title": "استوری 15",
+    "image": "/images/storyImages/story1.jpg",
+    "description": "یک وب‌سایت معرفی رزومه با React و CSS ساخته شده است."
+  }
+]

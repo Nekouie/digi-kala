@@ -10,6 +10,8 @@ const Story = () => {
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
     const [scrollX, setScrollX] = useState(0);
+    const [scrollLeftCount, setScrollLeftCount] = useState(0)
+    const [width, setWidth] = useState(0);
 
     const scrollRight = () => {
         scrollRef.current.scrollBy({left: 150, behavior: "smooth"});
@@ -26,12 +28,16 @@ const Story = () => {
         scrollRef.current.classList.add('no-snap');
         scrollRef.current.style.scrollBehavior = "auto";
 
+
     }
     const handleMouseMove = (e) => {
         if (!isDragging) return;
         const dx = e.pageX - startX;
         scrollRef.current.scrollLeft = scrollX - dx
-
+        setScrollLeftCount(scrollRef.current.clientWidth - scrollRef.current.scrollLeft + 20);
+        setWidth(scrollRef.current.scrollWidth);
+        console.log(width);
+        console.log(scrollLeftCount);
     }
 
     const handleMouseUp = () => {
@@ -43,25 +49,25 @@ const Story = () => {
 
     return (
         <>
-                <div
-                    className="bg-white  lg:px-3   w-full h-[10rem] flex items-center justify-center relative">
-                    <div onClick={scrollRight}
-                         className="lg:flex hidden hover:text-gray-800 text-gray-500 cursor-pointer absolute right-5 z-1 bg-white p-2 rounded-full border border-gray-300 ">
-                        <NavigateNextIcon/>
-                    </div>
-                    <div ref={scrollRef}
-                         onMouseDown={handleMouseDown}
-                         onMouseMove={handleMouseMove}
-                         onMouseUp={handleMouseUp}
-                         style={{cursor: (isDragging ? "grabbing" : "grab")}}
-                         className="w-full flex mx-5 list-container  overflow-y-hidden overflow-x-auto items-center justify-start relative -z-0 ">
-                        <Stories/>
-                    </div>
-                    <div onClick={scrollLeft}
-                         className="lg:flex text-gray-500 hover:text-gray-800 hidden absolute left-5 bg-white p-2 rounded-full border border-gray-300 ">
-                        <NavigateBeforeIcon/>
-                    </div>
+            <div
+                className="bg-white  lg:px-3   w-full h-[10rem] flex items-center justify-center relative">
+
+                <div onClick={scrollRight}
+                     className={`lg:flex hidden ${scrollLeftCount === 0 ? "opacity-0" : "opacity-100"} hover:text-gray-800 transition-all duration-500 delay-50 text-gray-500 cursor-pointer absolute right-13 z-1 bg-white p-2 rounded-full border border-gray-300 `}>
+                    <NavigateNextIcon/>
                 </div>
+                <div ref={scrollRef}
+                     onMouseDown={handleMouseDown}
+                     onMouseMove={handleMouseMove}
+                     onMouseUp={handleMouseUp}
+                     className="w-full flex mx-5 list-container  overflow-y-hidden overflow-x-auto items-center justify-start relative -z-0 ">
+                    <Stories/>
+                </div>
+                <div onClick={scrollLeft}
+                     className={`lg:flex ${scrollLeftCount < width? "opacity-0" : "opacity-100"} transition-all duration-500 delay-50  text-gray-500 hover:text-gray-800 hidden absolute left-13 bg-white p-2 rounded-full border border-gray-300 `}>
+                    <NavigateBeforeIcon/>
+                </div>
+            </div>
         </>
     )
 }
