@@ -10,14 +10,19 @@ const Story = () => {
     const [isDragging, setIsDragging] = useState(false);
     const [startX, setStartX] = useState(0);
     const [scrollX, setScrollX] = useState(0);
+    const [newScrollX, setNewScrollX] = useState(0);
     const [scrollLeftCount, setScrollLeftCount] = useState(0)
     const [width, setWidth] = useState(0);
 
     const scrollRight = () => {
         scrollRef.current.scrollBy({left: 150, behavior: "smooth"});
+        setNewScrollX(scrollRef.current.scrollLeft + 100);
+        setScrollLeftCount(scrollRef.current.clientWidth - scrollRef.current.scrollLeft - 20);
     }
     const scrollLeft = () => {
-        scrollRef.current.scrollBy({left: -150, behavior: "smooth"});
+        scrollRef.current.scrollBy({left: -100, behavior: "smooth"});
+        setScrollLeftCount(scrollRef.current.clientWidth - scrollRef.current.scrollLeft + 120);
+
     }
 
     const handleMouseDown = (e) => {
@@ -36,8 +41,7 @@ const Story = () => {
         scrollRef.current.scrollLeft = scrollX - dx
         setScrollLeftCount(scrollRef.current.clientWidth - scrollRef.current.scrollLeft + 20);
         setWidth(scrollRef.current.scrollWidth);
-        console.log(width);
-        console.log(scrollLeftCount);
+        setNewScrollX(scrollRef.current.scrollLeft);
     }
 
     const handleMouseUp = () => {
@@ -50,10 +54,10 @@ const Story = () => {
     return (
         <>
             <div
-                className="bg-white  lg:px-3   w-full h-[10rem] flex items-center justify-center relative">
+                className="bg-white w-full h-[10rem] flex items-center justify-center relative">
 
                 <div onClick={scrollRight}
-                     className={`lg:flex hidden ${scrollLeftCount === 0 ? "opacity-0" : "opacity-100"} hover:text-gray-800 transition-all duration-500 delay-50 text-gray-500 cursor-pointer absolute right-13 z-1 bg-white p-2 rounded-full border border-gray-300 `}>
+                     className={`lg:flex hidden ${newScrollX === 0 ? "opacity-0" : "opacity-100"} hover:text-gray-800 transition-all duration-500 delay-50 text-gray-500 cursor-pointer absolute right-13 z-1 bg-white p-2 rounded-full border border-gray-300 `}>
                     <NavigateNextIcon/>
                 </div>
                 <div ref={scrollRef}
@@ -64,7 +68,7 @@ const Story = () => {
                     <Stories/>
                 </div>
                 <div onClick={scrollLeft}
-                     className={`lg:flex ${scrollLeftCount < width? "opacity-0" : "opacity-100"} transition-all duration-500 delay-50  text-gray-500 hover:text-gray-800 hidden absolute left-13 bg-white p-2 rounded-full border border-gray-300 `}>
+                     className={`lg:flex ${scrollLeftCount > width? "opacity-0" : "opacity-100"} transition-all duration-500 delay-50  text-gray-500 hover:text-gray-800 hidden absolute left-13 bg-white p-2 rounded-full border border-gray-300 `}>
                     <NavigateBeforeIcon/>
                 </div>
             </div>
