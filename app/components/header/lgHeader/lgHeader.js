@@ -1,4 +1,4 @@
-import IconHeader from "@/app/components/header/lgHeader/components/icon";
+import IconHeader from "@/app/components/header/lgHeader/components/iconHeader";
 import Search from "@/app/components/header/lgHeader/components/search";
 import UserItems from "@/app/components/header/lgHeader/components/userItems";
 import Categories from "@/app/components/header/lgHeader/components/categories";
