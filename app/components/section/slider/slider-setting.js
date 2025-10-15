@@ -69,7 +69,7 @@ const SliderSetting = () => {
                             <NavigateBeforeIcon/>
                         </div>
                         <div onClick={nextSlider}
-                             className={`${onDiv ? "opacity-100" : "opacity-0"}  transition-all delay-50 duration-200 right-73 bottom-20 p-2 bg-white rounded-full`}>
+                             className={`${onDiv ? "opacity-100" : "opacity-0"} absolute transition-all delay-50 duration-200 right-73 bottom-20 p-2 bg-white rounded-full`}>
                             <NavigateNextIcon/>
                         </div>
                     </div>

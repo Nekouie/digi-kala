@@ -1,7 +1,7 @@
 "use client"
 import Header from "@/app/components/layout/header";
 import Footer from "@/app/components/layout/footer";
-import MainPage from "@/app/(main-content)/page";
+import MainPage from "@/app/(main-content)/main-content";
 import FixedItem from "@/app/components/fixed/fixedItem";
 import {Provider} from "react-redux";
 
