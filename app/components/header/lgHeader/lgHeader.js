@@ -1,4 +1,4 @@
-import Icon from "@/app/components/header/lgHeader/components/icon";
+import IconHeader from "@/app/components/header/lgHeader/components/icon";
 import Search from "@/app/components/header/lgHeader/components/search";
 import UserItems from "@/app/components/header/lgHeader/components/userItems";
 import Categories from "@/app/components/header/lgHeader/components/categories";
@@ -13,7 +13,7 @@ const LgHeader = () => {
                 " items-center"}>
                 <div className="w-full flex h-10 items-center justify-between">
                         <div className="flex items-center max-w-3/4 justify-center">
-                            <Icon/>
+                            <IconHeader/>
                             <Search/>
                         </div>
                         <UserItems/>
