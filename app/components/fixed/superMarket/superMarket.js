@@ -5,7 +5,7 @@ const SuperMarket = () => {
         <>
             <div className="w-full flex justify-center items-center">
                 <div
-                    className="lg:hidden w-fit h-fit p-3 rounded-4xl z-999  bg-green-700  fixed  bottom-12 flex items-center justify-center">
+                    className="lg:hidden w-fit h-fit p-3 rounded-4xl z-999  bg-green-700  fixed  bottom-22 flex items-center justify-center">
                     <ShoppingBasketIcon className="text-white"/>
                     <span className="text-white mx-2">|</span>
                     <p className="text-white ml-2">سوپر مارکت، تنوع بالا، پرتخفیف</p>

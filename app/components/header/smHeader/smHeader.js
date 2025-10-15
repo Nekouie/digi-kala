@@ -9,7 +9,7 @@ import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 const SmHeader = () => {
     return (
         <>
-            <div className="lg:hidden text-nowrap px-5 w-full h-30 flex flex-col items-center justify-around p-2">
+            <div className="lg:hidden sticky text-nowrap px-5 w-full h-30 flex flex-col items-center justify-around p-2">
                 <div className="w-full h-1/2 flex items-center justify-between flex-row">
                     <div
                         className={"w-11/12 relative bg-gray-200 py-2 px-5 h-full rounded-xl" +

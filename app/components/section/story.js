@@ -64,7 +64,7 @@ const Story = () => {
                      onMouseDown={handleMouseDown}
                      onMouseMove={handleMouseMove}
                      onMouseUp={handleMouseUp}
-                     className="w-full flex mx-5 list-container  overflow-y-hidden overflow-x-auto items-center justify-start relative -z-0 ">
+                     className="w-full flex list-container  overflow-y-hidden overflow-x-auto items-center justify-start relative -z-0 ">
                     <Stories/>
                 </div>
                 <div onClick={scrollLeft}

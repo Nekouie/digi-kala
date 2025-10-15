@@ -16,19 +16,17 @@ const SliderSetting = () => {
     const sliderRef = useRef(null);
 
     const prevSlider = () => {
-        sliderRef.current.scrollBy({left: -1, behavior: "smooth"});
+        sliderRef.current.scrollBy({left: -100, behavior: "smooth"});
     }
     const nextSlider = () => {
-        sliderRef.current.scrollBy({left: +1, behavior: "smooth"});
+        sliderRef.current.scrollBy({left: +100, behavior: "smooth"});
     }
 
     const handleMouseEnter = () => {
         setOnDiv(true);
-        console.log(onDiv);
     }
     const handleMouseLeave = () => {
         setOnDiv(false);
-        console.log(onDiv);
     }
 
     const handleMouseDown = (e) => {
@@ -53,14 +51,14 @@ const SliderSetting = () => {
 
     return (
         <>
-            <div className="max-w-500 h-fit flex items-center justify-center relative">
+            <div className="w-fit  h-fit flex items-center justify-center relative">
                 <div onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}
                      onMouseMove={handleMouseMove} ref={sliderRef}
                      onMouseEnter={handleMouseEnter}
                      onMouseLeave={handleMouseLeave}
-                     className="w-600 mb-10  cursor-pointer list-container scroll-smooth h-fit flex flex-row  snap-x snap-mandatory">
+                     className="lg:w-500 w-full mb-10 h-fit overflow-x-auto cursor-pointer list-container scroll-smooth flex flex-row justify-center  snap-x snap-mandatory">
                     {sliderImage.map((image, i) => (
-                        <Image className="snap-start  inset-x-0" key={i} src={image} alt={i}/>
+                        <Image className="w-11/12 lg:w-full object-fill  lg:h-fit h-60 lg:rounded-none px-2 rounded-2xl  lg:object-center lg:snap-start snap-center" key={i} src={image} alt={i}/>
                     ))}
 
                     <div className="w-full">
