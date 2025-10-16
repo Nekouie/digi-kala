@@ -6,12 +6,16 @@ import SmSlider from "@/public/images/slider/sm-pic/smPic";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import {useRef, useState} from "react";
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Pagination, Navigation} from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const SliderSetting = () => {
 
-    const [scrollX, setScrollX] = useState(0);
-    const [isDragging, setIsDragging] = useState(false);
-    const [startX, setStartX] = useState(0);
+
     const [onDiv, setOnDiv] = useState(false);
 
     const sliderRef = useRef(null);
@@ -30,49 +34,43 @@ const SliderSetting = () => {
         setOnDiv(false);
     }
 
-    const handleMouseDown = (e) => {
-        e.preventDefault();
-        setIsDragging(true);
-        setStartX(e.pageX);
-        setScrollX((sliderRef.current.scrollLeft));
-
-    }
-    const handleMouseMove = (e) => {
-        if (!isDragging) return;
-        const dx = (e.pageX - startX) * 6;
-        sliderRef.current.scrollLeft = (scrollX - dx)
-    }
-
-    const handleMouseUp = () => {
-        setIsDragging(false);
-        sliderRef.current.classList.remove('no-snap');
-
-    }
-
 
     return (
         <>
-            <div className="w-full  mb-10   flex items-start justify-center relative">
-                <div onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}
-                     onMouseMove={handleMouseMove} ref={sliderRef}
+            <div className="w-full  mb-10 hidden lg:flex items-start justify-center relative">
+                <div ref={sliderRef}
                      onMouseEnter={handleMouseEnter}
                      onMouseLeave={handleMouseLeave}
-                     className="lg:w-500 w-full  cursor-pointer list-container overflow-auto scroll-smooth flex flex-row justify-start  snap-x snap-mandatory">
-                    {sliderImage.map((image, i) => (
-                        <Image className="w-full  object-cover  px-0  rounded-none object-center snap-start hidden lg:block"  key={i} src={image} alt={i}/>
-                    ))}
-                    {SmSlider.map((SmImage, index) => (
+                     className={`lg:w-500 w-full  cursor-pointer  overflow-x-auto`}>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        loop={true}
+                        navigation={true}
 
-                        <Image className="h-70 lg:hidden min-w-11/12 px-2 rounded-2xl snap-center"  key={index} src={SmImage} alt={index}/>
-                    ))}
+                        className="mySwiper"
+                    >
+
+                        {sliderImage.map((image, i) => (
+                            <SwiperSlide>
+                                <Image
+                                    className="w-full  object-cover px-0 min-h-80  rounded-none snap-start object-center  hidden "
+                                    key={i} src={image} alt={i}/>
+                            </SwiperSlide>
+
+
+                        ))}
+
+                    </Swiper>
+
 
                     <div className="w-full">
                         <div onClick={prevSlider}
-                             className={`${onDiv ? "opacity-100" : "opacity-0"} lg:absolute hidden transition-all delay-50 duration-200 right-31 bottom-10 p-2 bg-white rounded-full`}>
+                             className={`${onDiv ? "opacity-100" : "opacity-0"} lg:flex absolute hidden  transition-all delay-50 z-80 duration-200 right-31 bottom-10 p-2 bg-white rounded-full`}>
                             <NavigateBeforeIcon/>
                         </div>
                         <div onClick={nextSlider}
-                             className={`${onDiv ? "opacity-100" : "opacity-0"} lg:absolute hidden transition-all delay-50 duration-200 right-20 bottom-10 p-2 bg-white rounded-full`}>
+                             className={`${onDiv ? "opacity-100" : "opacity-0"} lg:flex absolute hidden transition-all delay-50 z-80 duration-200 right-20 bottom-10 p-2 bg-white rounded-full`}>
                             <NavigateNextIcon/>
                         </div>
                     </div>

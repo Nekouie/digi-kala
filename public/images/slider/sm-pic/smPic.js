@@ -7,7 +7,7 @@ import plus from "./plus-sm.gif";
 import sport from "./sport-sm.jpg";
 import xviosion from "./Xvision-sm.jpg";
 
-const SmSlider = [
+const SmSliderPic = [
     chini ,
     food,
     health,
@@ -18,4 +18,4 @@ const SmSlider = [
     xviosion,
 ]
 
-export default SmSlider;
+export default SmSliderPic;
