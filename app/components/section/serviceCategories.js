@@ -17,9 +17,9 @@ const ServiceCategories = () => {
 
     return (
         <>
-            {error? (<div className="p-10">خطا : {error}</div>) : (<div className="w-full flex justify-center items-center -mt-10">
+            {error? (<div className="p-10">خطا : {error}</div>) : (<div className="w-full flex justify-start items-start ">
                 {loading ? (<div
-                    className="w-full h-60 flex overflow-y-hidden overflow-x-auto list-container relative flex-row items-start lg:justify-between justify-start pt-20 xl:px-20 px-6     text-center">
+                    className="w-full h-60 flex overflow-y-hidden overflow-x-auto list-container relative flex-row items-start lg:justify-between justify-start pt-20 lg:px-20 px-6     text-center">
                     {Array.from({length: 10}).map((_, index) => (
                         <Skeleton
                             key={index}
@@ -33,7 +33,7 @@ const ServiceCategories = () => {
                 </div>) : (
 
                     <div
-                        className="w-full h-60 flex overflow-y-hidden overflow-x-auto list-container relative flex-row items-start lg:justify-between justify-start pt-20 xl:px-20 text-center">
+                        className="w-full h-30 flex overflow-y-hidden overflow-x-auto list-container relative flex-row items-start lg:justify-between justify-start  lg:px-20 text-center">
                         {data.map((data) => (
                             <div key={data.id}
                                  className="flex hover:cursor-pointer flex-col items-center justify-center w-19 me-5">

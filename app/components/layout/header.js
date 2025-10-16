@@ -4,8 +4,10 @@ import HeaderContent from "@/app/components/header/headerContent";
 const Header = () => {
     return (
         <>
-            <Ads/>
-            <HeaderContent />
+            <div className="w-full h-full ">
+                <Ads/>
+                <HeaderContent />
+            </div>
         </>
     )
 }
