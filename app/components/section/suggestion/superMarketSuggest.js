@@ -3,6 +3,7 @@ import Badge from "@mui/material/Badge";
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SugImages from "@/public/images/suggestionImages/images";
 import Image from "next/image"
+import {hidden} from "next/dist/lib/picocolors";
 
 const SuperMarketSuggest = () => {
 
@@ -24,10 +25,10 @@ const SuperMarketSuggest = () => {
                 <div className="flex hover:cursor-pointer w-full h-full flex-row items-center">
                     <div className="flex items-center justify-start w-1/2">
                         <Image className="ms-10" src={SugImages.fresh} alt="fresh" />
-                        <Image className="ms-6"  src={SugImages.freshText} alt="freshText" />
+                        <Image className="ms-6 "  src={SugImages.freshText} alt="freshText" />
                         <div
                             className="flex items-center justify-between bg-green-600 rounded-2xl py-1 px-3 ms-6 text-nowrap">
-                            <p className="text-white text-[1rem]">تا 50% تخفیف</p>
+                            <p className="text-white text-md">تا 50% تخفیف</p>
                         </div>
                     </div>
                     <div className="  w-1/2 flex items-center justify-around ">
@@ -55,11 +56,6 @@ const SuperMarketSuggest = () => {
                             <StyledBadge badgeContent={"50%"}>
                                 <div className={"bg-white rounded-full w-[4rem] h-[4rem] m-1 flex items-center justify-center"}>
                                     <Image className="w-13 rounded-full" src={SugImages.item_5} alt="item_5" />
-                                </div>
-                            </StyledBadge>
-                            <StyledBadge badgeContent={"50%"}>
-                                <div className={"bg-white rounded-full w-[4rem] h-[4rem] m-1 flex items-center justify-center"}>
-                                    <Image className="w-13 rounded-full" src={SugImages.item_6} alt="item_6" />
                                 </div>
                             </StyledBadge>
 

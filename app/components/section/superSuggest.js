@@ -42,8 +42,6 @@ const SuperSuggest = () => {
         setNewScrollX(scrollRef.current.scrollLeft);
         setScrollWidth(scrollRef.current.scrollWidth);
         setScrollCurrent(scrollRef.current.clientWidth - scrollRef.current.scrollLeft + 50);
-        console.log(scrollCurrent)
-        console.log(scrollWidth)
     }
 
     const handleMouseUp = () => {

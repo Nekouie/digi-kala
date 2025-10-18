@@ -1,9 +1,6 @@
 import SmSliderPic from "@/public/images/slider/sm-pic/smPic";
-import {Swiper, SwiperSlide} from "swiper/react";
 import Image from "next/image";
-import sliderImage from "@/public/images/slider/lg-pic/slider-image";
-import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+
 
 const SmSlider = () => {
     return (

@@ -11,7 +11,7 @@ const MainPage = () => {
     return (
         <>
             <div
-                className="lg:max-w-330 lg:px-2 mt-30 lg:mt-40  h-fit w-full flex flex-col justify-center items-center">
+                className="lg:max-w-330 overflow-x-hidden lg:px-2  lg:mt-40  h-fit w-full flex flex-col justify-center items-center">
                 <Story/>
             </div>
             <Slider />

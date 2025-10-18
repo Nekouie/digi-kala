@@ -19,14 +19,13 @@ const ServiceCategories = () => {
         <>
             {error? (<div className="p-10">خطا : {error}</div>) : (<div className="w-full flex justify-start items-start ">
                 {loading ? (<div
-                    className="w-full h-60 flex overflow-y-hidden overflow-x-auto list-container relative flex-row items-start lg:justify-between justify-start pt-20 lg:px-20 px-6     text-center">
+                    className="w-full h-30 flex overflow-hidden -mt-5  relative flex-row items-center lg:justify-between justify-start  lg:px-20 px-6     text-center">
                     {Array.from({length: 10}).map((_, index) => (
-                        <Skeleton
+                        <Skeleton className="min-w-15 min-h-10 me-5"
                             key={index}
                             variant='circular'
                             width={70}
-                            height={70}
-                            style={{margin: '10px 0'}}
+                            height={60}
                             animation='wave'
                         />
                     ))}

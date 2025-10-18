@@ -6,7 +6,7 @@ const SmFooter = () => {
     return (
         <>
             <div
-                className="lg:hidden w-full flex flex-col justify-center items-center relative">
+                className="lg:hidden w-full flex flex-col justify-center items-center pb-15 relative">
                 <DigiContact/>
                 <ListLink/>
                 <BioSm/>

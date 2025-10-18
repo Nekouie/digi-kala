@@ -2,18 +2,16 @@
 
 import Image from "next/image"
 import sliderImage from "@/public/images/slider/lg-pic/slider-image";
-import SmSlider from "@/public/images/slider/sm-pic/smPic";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import {useRef, useState} from "react";
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {Pagination, Navigation} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const SliderSetting = () => {
+const SliderLg = () => {
 
 
     const [onDiv, setOnDiv] = useState(false);
@@ -57,12 +55,9 @@ const SliderSetting = () => {
                                     className="w-full  object-cover px-0 min-h-80  rounded-none snap-start object-center  hidden "
                                     key={i} src={image} alt={i}/>
                             </SwiperSlide>
-
-
                         ))}
 
                     </Swiper>
-
 
                     <div className="w-full">
                         <div onClick={prevSlider}
@@ -80,4 +75,4 @@ const SliderSetting = () => {
     )
 }
 
-export default SliderSetting;
+export default SliderLg;

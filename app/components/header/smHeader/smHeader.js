@@ -5,12 +5,27 @@ import PageviewOutlinedIcon from "@mui/icons-material/PageviewOutlined";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
+import {useEffect, useState} from "react";
 
 const SmHeader = () => {
+
+    const [hClient, setHClient] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setHClient(window.scrollY > 130);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+
+    }, [hClient]);
+
+
     return (
         <>
-            <div className="lg:hidden sticky text-nowrap px-5 w-full h-30 flex flex-col items-center justify-around p-2">
-                <div className="w-full h-1/2 flex items-center justify-between flex-row">
+            <div
+                className="lg:hidden sticky text-nowrap px-5 w-full h-full flex flex-col items-center bg-white justify-center p-2">
+                <div className="w-full h-full flex items-center justify-between flex-row bg-white ">
                     <div
                         className={"w-11/12 relative bg-gray-200 py-2 px-5 h-full rounded-xl" +
                             " flex" +
@@ -27,12 +42,19 @@ const SmHeader = () => {
                         <NotificationsNoneIcon className="text-gray-600 scale-140"/>
                     </div>
                 </div>
-                <div className="w-full text-sm">
-                    <LocationOnOutlinedIcon className="text-gray-600 scale-110 me-2"/>
-                    <button>انتخاب استان و شهر</button>
-                    <NavigateBeforeIcon/>
-                </div>
+
             </div>
+            <div
+                className={`w-full 
+                    ${hClient ? "-translate-y-15 " : "translate-y-0" +
+                    " "} max-h-10 lg:hidden py-7 bg-white transition-all absolute -bottom-12   duration-500 text-sm -z-999 flex flex-row items-center justify-start`}>
+
+                <LocationOnOutlinedIcon className="text-gray-600 scale-110 me-2"/>
+                <button>انتخاب استان و شهر</button>
+                <NavigateBeforeIcon/>
+            </div>
+
+
         </>
     )
 }

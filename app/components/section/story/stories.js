@@ -16,14 +16,13 @@ const Stories = () => {
         <>
             {error ? (<p className="mx-auto">خطا : {error}</p>) : null}
             {loading ? (<div
-                className="w-full  h-60 flex overflow-y-hidden overflow-x-auto list-container relative flex-row items-start lg:justify-between justify-start pt-20 xl:px-20 px-6     text-center">
+                className="w-full h-60 flex overflow-x-scroll  relative flex-row items-start lg:justify-between justify-start pt-20 lg:px-20 px-6 text-center">
                 {Array.from({length: 10}).map((_, index) => (
-                    <Skeleton
+                    <Skeleton className="min-w-20 min-h-20 me-5"
                         key={index}
                         variant='circular'
                         width={70}
                         height={70}
-                        style={{margin: '10px 0'}}
                         animation='wave'
                     />
                 ))}
