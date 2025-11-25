@@ -94,7 +94,7 @@ const SuperSuggest = () => {
                             {superSuggest.map((item) => (
                                 <li key={item.id} className="bg-white rounded-xs h-full min-w-40 p-5  sm:-ms-6 me-1 flex flex-col justify-between items-center ">
                                     <Image className="flex justify-center items-center pb-3" src={item.image} alt={item.name} width={140} height={140}/>
-                                    <p className="text-xs text-gray-400 ">{item.name}</p>
+                                    <p className="text-xs text-gray-400 line-clamp-2">{item.name}</p>
                                     <div className="flex flex-row items-center justify-between w-full pt-2">
                                         <p className="text-[10px] bg-red-600 text-white rounded-lg px-1 justify-center items-center">{item.off}%</p>
                                         <p className="text-xs text-gray-800 font-bold">{item.price} تومان</p>
