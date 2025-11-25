@@ -28,32 +28,32 @@ const SuperMarketSuggest = () => {
                         <Image className="ms-6 "  src={SugImages.freshText} alt="freshText" />
                         <div
                             className="flex items-center justify-between bg-green-600 rounded-2xl py-1 px-3 ms-6 text-nowrap">
-                            <p className="text-white text-md">تا 50% تخفیف</p>
+                            <p className="text-white text-md">تا ۵۰% تخفیف</p>
                         </div>
                     </div>
                     <div className="  w-1/2 flex items-center justify-around ">
                         <div className={"flex flex-row mr-2 w-full"}>
-                            <StyledBadge badgeContent={"50%"}>
+                            <StyledBadge badgeContent={"۵۰%"}>
                                 <div className={"bg-white rounded-full w-[4rem] h-[4rem] m-1 flex items-center justify-center"}>
                                     <Image className="w-13 rounded-full" src={SugImages.item_1} alt="item_1" />
                                 </div>
                             </StyledBadge>
-                            <StyledBadge badgeContent={"50%"}>
+                            <StyledBadge badgeContent={"۵۰%"}>
                                 <div className={"bg-white rounded-full w-[4rem] h-[4rem] m-1 flex items-center justify-center"}>
                                     <Image className="w-13 rounded-full" src={SugImages.item_2} alt="item_2" />
                                 </div>
                             </StyledBadge>
-                            <StyledBadge badgeContent={"50%"}>
+                            <StyledBadge badgeContent={"۵۰%"}>
                                 <div className={"bg-white rounded-full w-[4rem] h-[4rem] m-1 flex items-center justify-center"}>
                                     <Image className="w-13 rounded-full" src={SugImages.item_3} alt="item_3" />
                                 </div>
                             </StyledBadge>
-                            <StyledBadge badgeContent={"50%"}>
+                            <StyledBadge badgeContent={"۵۰%"}>
                                 <div className={"bg-white rounded-full w-[4rem] h-[4rem] m-1 flex items-center justify-center"}>
                                     <Image className="w-13 rounded-full" src={SugImages.item_4} alt="item_4" />
                                 </div>
                             </StyledBadge>
-                            <StyledBadge badgeContent={"50%"}>
+                            <StyledBadge badgeContent={"۵۰%"}>
                                 <div className={"bg-white rounded-full w-[4rem] h-[4rem] m-1 flex items-center justify-center"}>
                                     <Image className="w-13 rounded-full" src={SugImages.item_5} alt="item_5" />
                                 </div>
@@ -61,7 +61,7 @@ const SuperMarketSuggest = () => {
 
                         </div>
                         <div className="bg-white rounded-3xl py-3 px-4 text-nowrap me-10 flex flex-row justify-center items-center ">
-                            <p className={"text-green-600 text-xs font-[500]"}>بیش از 100 کالا </p>
+                            <p className={"text-green-600 text-xs font-[500]"}>بیش از ۱۰۰ کالا </p>
                             <ArrowBackIcon className="scale-80 text-green-600 ms-1" />
                         </div>
                     </div>

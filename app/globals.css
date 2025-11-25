@@ -17,12 +17,14 @@
     --foreground: #000000;
   }
 }
+* {
+  font-feature-settings: "ss01";
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "vazir" ,"Vazir" ,"B Koodak", "B Nazanin", sans-serif;
-
+  font-family: "vazir" ,"B Koodak", "B Nazanin", sans-serif;
 }
 
 input::placeholder{

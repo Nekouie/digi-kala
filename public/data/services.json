@@ -7,7 +7,7 @@
   },
   {
     "id": 2,
-    "title": "آیفون 17 ببر",
+    "title": "آیفون ۱۷ ببر",
     "image": "/images/serviceImages/iphone.png",
     "description": "اپ ساده برای مدیریت کارهای روزانه با قابلیت افزودن و حذف تسک‌ها."
   },
@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-    "title": "خرید FC26",
+    "title": "خرید FC۲۶",
     "image": "/images/serviceImages/fc26.png",
     "description": "یک پروژه تمرینی با React و Context API برای مدیریت سبد خرید."
   },

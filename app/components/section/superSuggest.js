@@ -76,11 +76,11 @@ const SuperSuggest = () => {
                             <Image className="scale-110" src={amazings} alt="amazings"/>
                             <p className="text-white w-11/12 text-center text-2xl flex justify-between items-center">
                                 <span
-                                    className="bg-white text-black rounded-sm p-0.5 text-[1rem]">10</span> :
+                                    className="bg-white text-black rounded-sm p-0.5 text-[1rem]">۱۰</span> :
                                 <span
-                                    className="bg-white text-black rounded-sm p-0.5 text-[1rem]">10</span> :
+                                    className="bg-white text-black rounded-sm p-0.5 text-[1rem]">۱۰</span> :
                                 <span
-                                    className="bg-white text-black rounded-sm p-0.5 text-[1rem]">10
+                                    className="bg-white text-black rounded-sm p-0.5 text-[1rem]">۱۰
                                  </span></p>
                             <Image src={amazing} alt="amazing"/>
                             <div className="flex flex-row items-center justify-center">

@@ -7,7 +7,7 @@ import Copyright from "@/app/components/footer/lgFooter/components/copyright";
 const LgFooter = () => {
     return (
         <>
-            <div className="xl:max-w-380 hidden lg:block">
+            <div className="xl:max-w-380 hidden lg:block px-4">
                 <CompanyInf/>
                 <Links/>
                 <Download/>

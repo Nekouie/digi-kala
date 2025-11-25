@@ -15,8 +15,8 @@ const CompanyInf = () => {
             <div
                 className="w-full border-t-2 border-gray-200 flex flex-col justify-center items-center">
                 <div className="w-full pt-5 h-20 flex flex-row justify-between items-center">
-                    <div className="w-50 ms-5">
-                        <Image className="w-200" src={logo} alt="logo"/>
+                    <div className="w-50">
+                        <Image className="w-200" src={logo} alt ="logo"/>
                     </div>
                     <div
                         className="w-30 border me-7 border-gray-200 rounded-lg pe-4 ps-2 py-1.5 flex justify-between items-center">
@@ -25,8 +25,8 @@ const CompanyInf = () => {
                     </div>
 
                 </div>
-                <div className="w-full h-10 flex flex-row justify-start items-center ps-5">
-                    <p className="me-5 text-[0.8rem] text-gray-700 font-light">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ </p>
+                <div className="w-full h-10 flex flex-row justify-start items-center">
+                    <p className="text-[0.8rem] text-gray-700 font-light">تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ </p>
                     <span className="text-gray-400">|</span>
                     <p className="ms-5 me-5 text-[0.8rem] text-gray-900 font-light">۰۲۱-۹۱۰۰۰۱۰۰
 
