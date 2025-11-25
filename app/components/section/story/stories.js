@@ -26,17 +26,17 @@ const Stories = () => {
                         animation='wave'
                     />
                 ))}
-            </div>) : (<div
-                className="w-full h-full flex justify-start mt-4 scroll-smooth">
+            </div>) : (<ul
+                className="w-full h-full flex justify-start mt-4 scroll-smooth snap-mandatory">
                 {stories.map((story) => (
 
-                    <div key={story.id}
+                    <li key={story.id}
                          className="min-w-20 cursor-pointer w-20 ml-5 snap-start snap-always scroll-smooth flex flex-col items-center justify-start">
                         <Image className="w-20 mb-2  rounded-full border-3 p-1 border-pink-800"
                                src={story.image} alt={story.title} width={50} height={50}/>
                         <p className='text-[0.8rem] mt-2 font-light'>{story.title}</p>
-                    </div>
-                ))}</div>)}
+                    </li>
+                ))}</ul>)}
 
         </>
     )

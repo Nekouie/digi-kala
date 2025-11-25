@@ -4,7 +4,9 @@ import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import {useRef, useState} from "react";
 import amazing from "../../../public/images/suggestionImages/Amazing.svg"
 import amazings from "../../../public/images/suggestionImages/Amazings.svg"
+import superSuggest from "../../../public/data/superSuggest.json"
 import Image from "next/image"
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const SuperSuggest = () => {
 
@@ -88,22 +90,25 @@ const SuperSuggest = () => {
                             </div>
                         </div>
 
-                        <div className="w-full h-full flex flex-row items-start justify-start">
-                            <div
-                                className="bg-white rounded-xs h-full min-w-40  sm:-ms-6 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-1 "></div>
-                            <div className="bg-white rounded-xs h-full min-w-40 me-2"></div>
-                        </div>
+                        <ul draggable={true} className="w-full h-full flex flex-row items-start justify-start">
+                            {superSuggest.map((item) => (
+                                <li key={item.id} className="bg-white rounded-xs h-full min-w-40 p-5  sm:-ms-6 me-1 flex flex-col justify-between items-center ">
+                                    <Image className="flex justify-center items-center pb-3" src={item.image} alt={item.name} width={140} height={140}/>
+                                    <p className="text-xs text-gray-400 ">{item.name}</p>
+                                    <div className="flex flex-row items-center justify-between w-full pt-2">
+                                        <p className="text-[10px] bg-red-600 text-white rounded-lg px-1 justify-center items-center">{item.off}%</p>
+                                        <p className="text-xs text-gray-800 font-bold">{item.price} تومان</p>
+                                    </div>
+                                    <div className="w-full flex flex-row items-center justify-end">
+                                        <p className="text-gray-400 text-[10px] line-through">{item.previousPrice}</p>
+                                    </div>
+                                </li>
+                            ))}
+                            <li className="bg-white rounded-xs h-full min-w-40  sm:-ms-6 me-1 flex flex-col justify-center items-center ">
+                                <div className="rounded-full border-2 mb-4 p-3 text-cyan-400 font-bold"><ArrowBackIcon/></div>
+                                <p className="">مشاهده همه</p>
+                            </li>
+                        </ul>
                     </div>
 
                     <div onClick={scrollLeft}
